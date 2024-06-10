@@ -201,12 +201,12 @@
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="Subject">
                                     <label for="subject">Subject</label>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
@@ -308,6 +308,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      
+      var whatsappMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      var whatsappURL = `https://wa.me/+2347045279565?text=${encodeURIComponent(whatsappMessage)}`;
+      
+      window.open(whatsappURL, '_blank');
+    });
+    </script>
 </body>
 
 </html>
