@@ -139,7 +139,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-4">
-            <h1 class="display-2 text-white mb-3 animated slideInDown">Contact</h1>
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Check Result</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -157,7 +157,7 @@
         <div class="container py-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 mb-3">Check Your Result</h1>
-               
+    
             </div>
             <!-- <div class="row contact-info position-relative g-0 mb-5">
                 <div class="col-lg-6">
@@ -199,7 +199,7 @@
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                    
-                     <form>
+                     <form method="post" id="form2" name="form2" action="https://www.linkskool.com/newportal/process_candidate_login.php">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -209,8 +209,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Your Email">
+                                    <label for="password">Your Password</label>
                                 </div>
                             </div>
                             <!-- <div class="col-12">
@@ -220,7 +220,15 @@
                                 </div>
                             </div> -->
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Login</button>
+                            </div>
+                            <div class="col-xl-6">
+                                <!-- <div class="faq-form-btn events-form-btn">
+                                    <input name="forgetpas" style="background-color:#002147; color: white;"
+                                        class="btn me-5" id="forgetpas" type="submit" value="forgot password">
+                                </div> -->
+                                <input name="dkb" type="hidden" id="dkb" value="winsschool">
+                                <input name="fld" type="hidden" id="fld" value="winsschool">
                             </div>
                         </div>
                     </form> 
